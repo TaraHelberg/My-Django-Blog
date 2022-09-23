@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['codestar-tlh.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-tarahelberg-mydjangoblo-iowpmtdgjas.ws-eu64.gitpod.io']
 
 # Application definition
 
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
@@ -131,7 +133,7 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-.MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
