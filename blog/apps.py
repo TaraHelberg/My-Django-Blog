@@ -1,3 +1,6 @@
+"""
+Used for imports for apps.py
+"""
 from django.apps import AppConfig
 
 
